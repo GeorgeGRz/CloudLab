@@ -1,4 +1,3 @@
- 
 # Install
 Project includes an INSTALL shell script that uses ansible-playbook in order to move server files required to run the service to the remote host. Before running INSTALL, one has to add the Remote IP address below "[cloud]".
 
@@ -19,10 +18,10 @@ Where in both cases, you have to replace the existing path with your own, absolu
 
 ### Installing client
 1. Edit <b>ifup_linux</b>
-Line 3: Replace private key with your own(client) generated private key.
-Line 8: Replace public key with remote machine public key.
-Line 11: Enter the IP of the host machine along with the port where docker is running.
-Line 24: Replace the existing IP with the IP that wireguard is going to assign you.
+    * Line 3: Replace private key with your own(client) generated private key.
+    * Line 8: Replace public key with remote machine public key.
+    * Line 11: Enter the IP of the host machine along with the port where docker is running.
+    * Line 24: Replace the existing IP with the IP that wireguard is going to assign you.
 
 2. Edit run-client
-Line 9: Replace the existing path with absolute path to the client files
+    * Line 9: Replace the existing path with absolute path to the client files
