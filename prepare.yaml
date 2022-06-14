@@ -1,0 +1,23 @@
+---
+- hosts: cloud
+  remote_user: "{{user}}"
+
+  tasks:
+
+    - name: copy okeanos folder
+
+      become: true
+
+      copy:
+
+        src: "./okeanos"     
+
+        dest: /home/{{ user }}/test
+
+        owner: "{{ user }}"
+
+        group: "{{ user }}"
+
+        mode: 0755
+
+
